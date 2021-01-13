@@ -1,0 +1,6 @@
+.idea
+*.py[cod]
+logs
+my.conf
+migrations
+qiniu_secret_info.py

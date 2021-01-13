@@ -1,0 +1,39 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+    修改密码
+{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="../../static/css/authPro/changepwd.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1684000_25b7a88jm5b.css">
+{% endblock %}
+
+{% block main %}
+    <main id="container">
+        <div class="login-contain">
+            <div class="top-contain">
+                <h4 class="please-login">密码修改</h4>
+            </div>
+            <form action="" method="post" class="form-contain">
+                <div class="form-item">
+                    <input type="tel" placeholder="请输入手机号或用户名" name="user_tel" class="form-control" autocomplete="off">
+                    <div class="form-item">
+                        <input type="password" placeholder="请输入旧密码" name="old_password" class="form-control">
+                    </div>
+                    <div class="form-item">
+                        <input type="password" placeholder="请输入新密码" name="new_password" class="form-control">
+                    </div>
+                    <div class="form-login">
+                        <input type="submit" value="确认修改" class="login-btn">
+                        <input type="reset" value="取消修改" class="login-btn">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+{% endblock %}
+
+{% block script %}
+    <script src="../../static/js/users/changepwd.js"></script>
+{% endblock %}
